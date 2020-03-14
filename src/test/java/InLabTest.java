@@ -24,8 +24,8 @@ public class InLabTest {
         NotaValidator notaValidator = new NotaValidator(fileRepository1,fileRepository2);
         NotaXMLRepo fileRepository3 = new NotaXMLRepo("note.xml");
         Service service = new Service(fileRepository1,studentValidator,fileRepository2,temaValidator,fileRepository3,notaValidator);
-        service.addStudent(new Student("11", "Alex11", 931, "email1@gmail.com"));
-        assertEquals("Alex11", fileRepository1.findOne("11").getNume());
+        service.addStudent(new Student("11", "Student11", 933, "email1@gmail.com"));
+        assertEquals("Student11", fileRepository1.findOne("11").getNume());
     }
 
     @Test
@@ -41,11 +41,11 @@ public class InLabTest {
         for (Object i : fileRepository1.findAll()) {
             counter1++;
         }*/
-        service.addStudent(new Student("12", "Alex12", 931, "email1@gmail.com"));
+        service.addStudent(new Student("12", "Student12", 933, "email1@gmail.com"));
         /*int counter2 = 0;
         for (Object j : fileRepository1.findAll()) {
             counter2++;
         }*/
-        assertEquals("Alex12", fileRepository1.findOne("12").getNume());
+        assertEquals("Student12", fileRepository1.findOne("12").getNume());
     }
 }
