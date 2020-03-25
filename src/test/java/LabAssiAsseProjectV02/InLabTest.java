@@ -7,16 +7,14 @@ import LabAssiAsseProjectV02.repository.NotaXMLRepo;
 import LabAssiAsseProjectV02.repository.StudentXMLRepo;
 import LabAssiAsseProjectV02.repository.TemaXMLRepo;
 import LabAssiAsseProjectV02.service.Service;
-import LabAssiAsseProjectV02.validation.NotaValidator;
-import LabAssiAsseProjectV02.validation.StudentValidator;
-import LabAssiAsseProjectV02.validation.TemaValidator;
-import LabAssiAsseProjectV02.validation.Validator;
+import LabAssiAsseProjectV02.validation.*;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.*;
 
 import org.junit.Test;
 
 public class InLabTest {
+
     @Test
     public void FirstTest(){
         StudentValidator studentValidator = new StudentValidator();
@@ -46,8 +44,43 @@ public class InLabTest {
         service.addStudent(new Student("12", "Student12", 933, "email1@gmail.com"));
         /*int counter2 = 0;
         for (Object j : fileRepository1.findAll()) {
-            counter2++;
-        }*/
+            counter2++;*/
+
         assertEquals("Student12", fileRepository1.findOne("12").getNume());
+    }
+
+
+    @Test(expected = ValidationException.class)
+    public void ThirdTest(){
+        StudentValidator studentValidator = new StudentValidator();
+        StudentXMLRepo fileRepository1 = new StudentXMLRepo("studenti.xml");
+        TemaValidator temaValidator = new TemaValidator();
+        TemaXMLRepo fileRepository2 = new TemaXMLRepo("teme.xml");
+        NotaValidator notaValidator = new NotaValidator(fileRepository1,fileRepository2);
+        NotaXMLRepo fileRepository3 = new NotaXMLRepo("note.xml");
+        Service service = new Service(fileRepository1,studentValidator,fileRepository2,temaValidator,fileRepository3,notaValidator);
+        try {
+            service.addTema(new Tema("","descriere",1,7));
+        }catch (ValidationException msg){
+            if (msg.getMessage().equals("Numar tema invalid!"))
+                throw new ValidationException("Id must not be null");
+        }
+    }
+
+    @Test(expected = ValidationException.class)
+    public void FourthTest(){
+        StudentValidator studentValidator = new StudentValidator();
+        StudentXMLRepo fileRepository1 = new StudentXMLRepo("studenti.xml");
+        TemaValidator temaValidator = new TemaValidator();
+        TemaXMLRepo fileRepository2 = new TemaXMLRepo("teme.xml");
+        NotaValidator notaValidator = new NotaValidator(fileRepository1,fileRepository2);
+        NotaXMLRepo fileRepository3 = new NotaXMLRepo("note.xml");
+        Service service = new Service(fileRepository1,studentValidator,fileRepository2,temaValidator,fileRepository3,notaValidator);
+        try {
+            service.addTema(new Tema("1","descriere",15,7));
+        }catch (ValidationException msg){
+            if(msg.getMessage().equals("Deadlineul trebuie sa fie intre 1-14."))
+                throw new ValidationException("Deadlineul trebuie sa fie intre 1-14.");
+        }
     }
 }
