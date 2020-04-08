@@ -303,9 +303,7 @@ public class InLabTest {
         int count=0;
         for (Tema t:fileRepository2.findAll())
             count++;
-        if (count==1){
-            assertEquals("descriere1", fileRepository2.findOne("1").getDescriere());
-        }
+        assertEquals(count,1);
         service.addNota(new Nota("1","1","1",10, LocalDate.now()),"very good");
         assertEquals("1", fileRepository3.findOne("1").getID());
     }
