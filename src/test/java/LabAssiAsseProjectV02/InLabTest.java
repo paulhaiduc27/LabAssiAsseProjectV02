@@ -13,6 +13,8 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
+import java.time.LocalDate;
+
 public class InLabTest {
 
     @Test
@@ -269,5 +271,42 @@ public class InLabTest {
         if (count==1){
             assertEquals("descriere1", fileRepository2.findOne("1").getDescriere());
         }
+    }
+
+    @Test
+    public void ValidGradeTest(){
+        StudentValidator studentValidator = new StudentValidator();
+        StudentXMLRepo fileRepository1 = new StudentXMLRepo("studenti.xml");
+        TemaValidator temaValidator = new TemaValidator();
+        TemaXMLRepo fileRepository2 = new TemaXMLRepo("teme.xml");
+        NotaValidator notaValidator = new NotaValidator(fileRepository1,fileRepository2);
+        NotaXMLRepo fileRepository3 = new NotaXMLRepo("note.xml");
+        Service service = new Service(fileRepository1,studentValidator,fileRepository2,temaValidator,fileRepository3,notaValidator);
+        service.addStudent(new Student("11", "Student11", 933, "email1@gmail.com"));
+        service.addTema(new Tema("1","descriere1",7,1));
+        service.addNota(new Nota("1","11","1",10, LocalDate.now()),"very good");
+        assertEquals("1", fileRepository3.findOne("1").getID());
+    }
+
+    @Test
+    public void ValidIntegratedTest(){
+        StudentValidator studentValidator = new StudentValidator();
+        StudentXMLRepo fileRepository1 = new StudentXMLRepo("studenti.xml");
+        TemaValidator temaValidator = new TemaValidator();
+        TemaXMLRepo fileRepository2 = new TemaXMLRepo("teme.xml");
+        NotaValidator notaValidator = new NotaValidator(fileRepository1,fileRepository2);
+        NotaXMLRepo fileRepository3 = new NotaXMLRepo("note.xml");
+        Service service = new Service(fileRepository1,studentValidator,fileRepository2,temaValidator,fileRepository3,notaValidator);
+        service.addStudent(new Student("1", "Student1", 933, "email1@gmail.com"));
+        assertEquals("Student1", fileRepository1.findOne("1").getNume());
+        service.addTema(new Tema("1","descriere1",7,1));
+        int count=0;
+        for (Tema t:fileRepository2.findAll())
+            count++;
+        if (count==1){
+            assertEquals("descriere1", fileRepository2.findOne("1").getDescriere());
+        }
+        service.addNota(new Nota("1","1","1",10, LocalDate.now()),"very good");
+        assertEquals("1", fileRepository3.findOne("1").getID());
     }
 }
