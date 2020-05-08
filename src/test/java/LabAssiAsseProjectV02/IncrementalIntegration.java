@@ -25,8 +25,8 @@ public class IncrementalIntegration {
         NotaValidator notaValidator = new NotaValidator(fileRepository1,fileRepository2);
         NotaXMLRepo fileRepository3 = new NotaXMLRepo("note.xml");
         Service service = new Service(fileRepository1,studentValidator,fileRepository2,temaValidator,fileRepository3,notaValidator);
-        service.addStudent(new Student("1", "Student1", 933, "email1@gmail.com"));
-        assertEquals("Student1", fileRepository1.findOne("1").getNume());
+        service.addStudent(new Student("4", "Student4", 933, "email4@gmail.com"));
+        assertEquals("Student4", fileRepository1.findOne("4").getNume());
     }
     @Test
     public void AddStudentAddAssignmentIntegration(){
