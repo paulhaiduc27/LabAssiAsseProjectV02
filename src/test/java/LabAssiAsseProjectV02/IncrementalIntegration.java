@@ -25,8 +25,8 @@ public class IncrementalIntegration {
         NotaValidator notaValidator = new NotaValidator(fileRepository1,fileRepository2);
         NotaXMLRepo fileRepository3 = new NotaXMLRepo("note.xml");
         Service service = new Service(fileRepository1,studentValidator,fileRepository2,temaValidator,fileRepository3,notaValidator);
-        service.addStudent(new Student("4", "Student4", 933, "email4@gmail.com"));
-        assertEquals("Student4", fileRepository1.findOne("4").getNume());
+        service.addStudent(new Student("1", "Student1", 933, "email1@gmail.com"));
+        assertEquals("Student1", fileRepository1.findOne("1").getNume());
     }
     @Test
     public void AddStudentAddAssignmentIntegration(){
@@ -58,14 +58,15 @@ public class IncrementalIntegration {
         Service service = new Service(fileRepository1,studentValidator,fileRepository2,temaValidator,fileRepository3,notaValidator);
         service.addStudent(new Student("3", "Student3", 933, "email3@gmail.com"));
         assertEquals("Student3", fileRepository1.findOne("3").getNume());
+        int countInitial=0;
+        for (Tema t:fileRepository2.findAll())
+            countInitial++;
         service.addTema(new Tema("2","descrieretema2",10,5));
         int count=0;
         for (Tema t:fileRepository2.findAll())
             count++;
-        if (count==1){
-            assertEquals("descrieretema2", fileRepository2.findOne("2").getDescriere());
-        }
-        service.addNota(new Nota("2","3","2",10, LocalDate.now()),"very good");
-        assertEquals("2", fileRepository3.findOne("2").getID());
+        assertEquals(count,countInitial+1);
+        service.addNota(new Nota("1","3","2",10, LocalDate.now()),"very good");
+        assertEquals("1", fileRepository3.findOne("1").getID());
     }
 }
