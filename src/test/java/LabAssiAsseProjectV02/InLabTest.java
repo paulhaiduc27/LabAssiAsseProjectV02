@@ -297,17 +297,17 @@ public class InLabTest {
         NotaValidator notaValidator = new NotaValidator(fileRepository1,fileRepository2);
         NotaXMLRepo fileRepository3 = new NotaXMLRepo("note.xml");
         Service service = new Service(fileRepository1,studentValidator,fileRepository2,temaValidator,fileRepository3,notaValidator);
-        service.addStudent(new Student("1", "Student1", 933, "email1@gmail.com"));
-        //assertEquals("Student1", fileRepository1.findOne("1").getNume());
+        service.addStudent(new Student("21", "Student21", 933, "email21@gmail.com"));
+        assertEquals("Student21", fileRepository1.findOne("21").getNume());
         int countInitial=0;
         for (Tema t:fileRepository2.findAll())
             countInitial++;
-        service.addTema(new Tema("1","descriere1",10,1));
+        service.addTema(new Tema("21","descriere21",10,1));
         int count=0;
         for (Tema t:fileRepository2.findAll())
             count++;
         assertEquals(count,countInitial+1);
-        service.addNota(new Nota("1","1","1",10, LocalDate.now()),"very good");
-        assertEquals("1", fileRepository3.findOne("1").getID());
+        service.addNota(new Nota("21","211","21",10, LocalDate.now()),"very good");
+        assertEquals("21", fileRepository3.findOne("21").getID());
     }
 }
