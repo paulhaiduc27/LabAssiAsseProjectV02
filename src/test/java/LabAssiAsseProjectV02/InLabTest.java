@@ -298,7 +298,7 @@ public class InLabTest {
         NotaXMLRepo fileRepository3 = new NotaXMLRepo("note.xml");
         Service service = new Service(fileRepository1,studentValidator,fileRepository2,temaValidator,fileRepository3,notaValidator);
         service.addStudent(new Student("1", "Student1", 933, "email1@gmail.com"));
-        assertEquals("Student1", fileRepository1.findOne("1").getNume());
+        //assertEquals("Student1", fileRepository1.findOne("1").getNume());
         int countInitial=0;
         for (Tema t:fileRepository2.findAll())
             countInitial++;
@@ -308,6 +308,6 @@ public class InLabTest {
             count++;
         assertEquals(count,countInitial+1);
         service.addNota(new Nota("1","1","1",10, LocalDate.now()),"very good");
-        //assertEquals("1", fileRepository3.findOne("1").getID());
+        assertEquals("1", fileRepository3.findOne("1").getID());
     }
 }
