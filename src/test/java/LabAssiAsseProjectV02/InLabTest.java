@@ -307,7 +307,7 @@ public class InLabTest {
         for (Tema t:fileRepository2.findAll())
             count++;
         assertEquals(count,countInitial+1);
-        service.addNota(new Nota("21","211","21",10, LocalDate.now()),"very good");
+        service.addNota(new Nota("21","21","21",10, LocalDate.now()),"very good");
         assertEquals("21", fileRepository3.findOne("21").getID());
     }
 }

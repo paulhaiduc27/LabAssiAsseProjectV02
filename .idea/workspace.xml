@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8cccb962-32f5-491b-8f5f-7a5a5d0b3ced" name="Default Changelist" comment="" />
+    <list default="true" id="8cccb962-32f5-491b-8f5f-7a5a5d0b3ced" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/src/test/java/LabAssiAsseProjectV02/InLabTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/LabAssiAsseProjectV02/InLabTest.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -132,7 +134,7 @@
       <workItem from="1586322851047" duration="73000" />
       <workItem from="1586324905694" duration="2352000" />
       <workItem from="1587993689145" duration="22000" />
-      <workItem from="1588946184930" duration="3357000" />
+      <workItem from="1588946184930" duration="3692000" />
     </task>
     <servers />
   </component>
