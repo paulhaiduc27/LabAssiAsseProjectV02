@@ -65,7 +65,7 @@ public class IncrementalIntegration {
         if (count==1){
             assertEquals("descrieretema2", fileRepository2.findOne("2").getDescriere());
         }
-        service.addNota(new Nota("1","3","2",10, LocalDate.now()),"very good");
-        assertEquals("1", fileRepository3.findOne("1").getID());
+        service.addNota(new Nota("2","3","2",10, LocalDate.now()),"very good");
+        assertEquals("2", fileRepository3.findOne("2").getID());
     }
 }
