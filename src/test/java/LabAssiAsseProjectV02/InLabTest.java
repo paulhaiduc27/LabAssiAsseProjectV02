@@ -261,7 +261,7 @@ public class InLabTest {
         NotaXMLRepo fileRepository3 = new NotaXMLRepo("note.xml");
         Service service = new Service(fileRepository1,studentValidator,fileRepository2,temaValidator,fileRepository3,notaValidator);
         try {
-            service.addTema(new Tema("1","descriere1",7,1));
+            service.addTema(new Tema("1","descriere1",10,1));
         }catch (ValidationException msg){
             throw new ValidationException(msg.getMessage());
         }
@@ -283,7 +283,7 @@ public class InLabTest {
         NotaXMLRepo fileRepository3 = new NotaXMLRepo("note.xml");
         Service service = new Service(fileRepository1,studentValidator,fileRepository2,temaValidator,fileRepository3,notaValidator);
         service.addStudent(new Student("11", "Student11", 933, "email1@gmail.com"));
-        service.addTema(new Tema("1","descriere1",7,1));
+        service.addTema(new Tema("1","descriere1",10,1));
         service.addNota(new Nota("1","11","1",10, LocalDate.now()),"very good");
         assertEquals("1", fileRepository3.findOne("1").getID());
     }
@@ -299,7 +299,7 @@ public class InLabTest {
         Service service = new Service(fileRepository1,studentValidator,fileRepository2,temaValidator,fileRepository3,notaValidator);
         service.addStudent(new Student("1", "Student1", 933, "email1@gmail.com"));
         assertEquals("Student1", fileRepository1.findOne("1").getNume());
-        service.addTema(new Tema("1","descriere1",7,1));
+        service.addTema(new Tema("1","descriere1",10,1));
         int count=0;
         for (Tema t:fileRepository2.findAll())
             count++;

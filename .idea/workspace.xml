@@ -2,10 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8cccb962-32f5-491b-8f5f-7a5a5d0b3ced" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/LabAssiAsseProjectV02.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/META-INF/LabAssiAsseProjectV02.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fisiere/Student1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/fisiere/Student1.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fisiere/Student11.txt" beforeDir="false" afterPath="$PROJECT_DIR$/fisiere/Student11.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fisiere/Student3.txt" beforeDir="false" afterPath="$PROJECT_DIR$/fisiere/Student3.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/LabAssiAsseProjectV02/InLabTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/LabAssiAsseProjectV02/InLabTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/LabAssiAsseProjectV02/IncrementalIntegration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/LabAssiAsseProjectV02/IncrementalIntegration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/studenti.xml" beforeDir="false" afterPath="$PROJECT_DIR$/studenti.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/LabAssiAsseProjectV02/InLabTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/LabAssiAsseProjectV02/InLabTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/LabAssiAsseProjectV02/IncrementalIntegration.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/LabAssiAsseProjectV02/IncrementalIntegration.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/teme.xml" beforeDir="false" afterPath="$PROJECT_DIR$/teme.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -137,7 +143,7 @@
       <workItem from="1586322851047" duration="73000" />
       <workItem from="1586324905694" duration="2352000" />
       <workItem from="1587993689145" duration="22000" />
-      <workItem from="1588946184930" duration="178000" />
+      <workItem from="1588946184930" duration="1009000" />
     </task>
     <servers />
   </component>
@@ -165,22 +171,22 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1587993709270" />
-    <state width="1493" height="351" key="GridCell.Tab.0.bottom" timestamp="1588946311136">
+    <state width="1493" height="351" key="GridCell.Tab.0.bottom" timestamp="1588947904533">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="351" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1588946311136" />
-    <state width="1493" height="351" key="GridCell.Tab.0.center" timestamp="1588946311136">
+    <state width="1493" height="351" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1588947904533" />
+    <state width="1493" height="351" key="GridCell.Tab.0.center" timestamp="1588947904533">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="351" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1588946311136" />
-    <state width="1493" height="351" key="GridCell.Tab.0.left" timestamp="1588946311136">
+    <state width="1493" height="351" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1588947904533" />
+    <state width="1493" height="351" key="GridCell.Tab.0.left" timestamp="1588947904533">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="351" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1588946311136" />
-    <state width="1493" height="351" key="GridCell.Tab.0.right" timestamp="1588946311136">
+    <state width="1493" height="351" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1588947904533" />
+    <state width="1493" height="351" key="GridCell.Tab.0.right" timestamp="1588947904533">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="351" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1588946311136" />
+    <state width="1493" height="351" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1588947904533" />
     <state x="277" y="55" key="SettingsEditor" timestamp="1584186432990">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

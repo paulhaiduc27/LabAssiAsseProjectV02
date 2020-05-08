@@ -39,7 +39,7 @@ public class IncrementalIntegration {
         Service service = new Service(fileRepository1,studentValidator,fileRepository2,temaValidator,fileRepository3,notaValidator);
         service.addStudent(new Student("2", "Student2", 933, "email2@gmail.com"));
         assertEquals("Student2", fileRepository1.findOne("2").getNume());
-        service.addTema(new Tema("1","descrieretema1",8,4));
+        service.addTema(new Tema("1","descrieretema1",10,4));
         int count=0;
         for (Tema t:fileRepository2.findAll())
             count++;
@@ -58,7 +58,7 @@ public class IncrementalIntegration {
         Service service = new Service(fileRepository1,studentValidator,fileRepository2,temaValidator,fileRepository3,notaValidator);
         service.addStudent(new Student("3", "Student3", 933, "email3@gmail.com"));
         assertEquals("Student3", fileRepository1.findOne("3").getNume());
-        service.addTema(new Tema("2","descrieretema2",9,5));
+        service.addTema(new Tema("2","descrieretema2",10,5));
         int count=0;
         for (Tema t:fileRepository2.findAll())
             count++;
