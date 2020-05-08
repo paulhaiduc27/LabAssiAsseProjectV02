@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8cccb962-32f5-491b-8f5f-7a5a5d0b3ced" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/LabAssiAsseProjectV02/InLabTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/LabAssiAsseProjectV02/InLabTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/LabAssiAsseProjectV02.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/META-INF/LabAssiAsseProjectV02.kotlin_module" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,7 +18,6 @@
   <component name="MavenImportPreferences">
     <option name="importingSettings">
       <MavenImportingSettings>
-        <option name="importAutomatically" value="true" />
         <option name="vmOptionsForImporter" value="-Xmx768m" />
       </MavenImportingSettings>
     </option>
@@ -24,17 +25,17 @@
   <component name="ProjectId" id="1Z7Ne5EdF951zE6xxkUC2Kg00Di" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.importing" />
   </component>
-  <component name="RunManager" selected="JUnit.InLabTest">
+  <component name="RunManager" selected="JUnit.IncrementalIntegration">
     <configuration name="MainApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="LabAssiAsseProjectV02.app.MainApplication" />
       <module name="MavenProject" />
@@ -93,8 +94,24 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="IncrementalIntegration" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="LabAssiAsseProjectV02" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="LabAssiAsseProjectV02.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="LabAssiAsseProjectV02" />
+      <option name="MAIN_CLASS_NAME" value="LabAssiAsseProjectV02.IncrementalIntegration" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.IncrementalIntegration" />
         <item itemvalue="JUnit.InLabTest" />
         <item itemvalue="JUnit.InLabTest (1)" />
         <item itemvalue="Application.MainApplication" />
@@ -118,12 +135,14 @@
       <workItem from="1585117176898" duration="2183000" />
       <workItem from="1586171710050" duration="1738000" />
       <workItem from="1586322851047" duration="73000" />
-      <workItem from="1586324905694" duration="812000" />
+      <workItem from="1586324905694" duration="2352000" />
+      <workItem from="1587993689145" duration="22000" />
+      <workItem from="1588946184930" duration="178000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="2" />
   </component>
   <component name="WindowStateProjectService">
     <state x="365" y="67" key="#InLabTest" timestamp="1585116879626">
@@ -142,33 +161,33 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="618" y="301" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1536.824@0.0.1536.824" timestamp="1585116839879" />
-    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1586322920528">
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1587993709270">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1586322920528" />
-    <state width="1493" height="351" key="GridCell.Tab.0.bottom" timestamp="1586325723846">
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1587993709270" />
+    <state width="1493" height="351" key="GridCell.Tab.0.bottom" timestamp="1588946311136">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="351" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1586325723846" />
-    <state width="1493" height="351" key="GridCell.Tab.0.center" timestamp="1586325723846">
+    <state width="1493" height="351" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1588946311136" />
+    <state width="1493" height="351" key="GridCell.Tab.0.center" timestamp="1588946311136">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="351" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1586325723846" />
-    <state width="1493" height="351" key="GridCell.Tab.0.left" timestamp="1586325723846">
+    <state width="1493" height="351" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1588946311136" />
+    <state width="1493" height="351" key="GridCell.Tab.0.left" timestamp="1588946311136">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="351" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1586325723845" />
-    <state width="1493" height="351" key="GridCell.Tab.0.right" timestamp="1586325723846">
+    <state width="1493" height="351" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1588946311136" />
+    <state width="1493" height="351" key="GridCell.Tab.0.right" timestamp="1588946311136">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="351" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1586325723846" />
+    <state width="1493" height="351" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1588946311136" />
     <state x="277" y="55" key="SettingsEditor" timestamp="1584186432990">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="277" y="55" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1584186432990" />
-    <state x="465" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1586322850301">
+    <state x="465" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1587993688818">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="465" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1586322850301" />
+    <state x="465" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1587993688818" />
   </component>
 </project>
