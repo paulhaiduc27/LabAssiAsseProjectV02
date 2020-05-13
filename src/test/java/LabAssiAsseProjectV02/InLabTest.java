@@ -302,7 +302,7 @@ public class InLabTest {
         int countInitial=0;
         for (Tema t:fileRepository2.findAll())
             countInitial++;
-        service.addTema(new Tema("21","descriere21",10,1));
+        service.addTema(new Tema("21","descriere21",11,1));
         int count=0;
         for (Tema t:fileRepository2.findAll())
             count++;

@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8cccb962-32f5-491b-8f5f-7a5a5d0b3ced" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/LabAssiAsseProjectV02/InLabTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/LabAssiAsseProjectV02/InLabTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -29,7 +30,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../an3sem2/ssvv/untitled" />
     <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.importing" />
   </component>
   <component name="RunManager" selected="JUnit.InLabTest">
@@ -134,7 +135,8 @@
       <workItem from="1586322851047" duration="73000" />
       <workItem from="1586324905694" duration="2352000" />
       <workItem from="1587993689145" duration="22000" />
-      <workItem from="1588946184930" duration="3692000" />
+      <workItem from="1588946184930" duration="3922000" />
+      <workItem from="1589346762570" duration="892000" />
     </task>
     <servers />
   </component>
@@ -158,10 +160,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="618" y="301" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1536.824@0.0.1536.824" timestamp="1585116839879" />
-    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1587993709270">
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1589346906105">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1587993709270" />
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1589346906105" />
     <state width="1493" height="351" key="GridCell.Tab.0.bottom" timestamp="1588949590647">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
